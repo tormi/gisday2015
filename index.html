@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>PRIA avalikud kaarditeenused</title>
+		<meta name="description" content="GIS-päev 2015 ettekanne">
+		<meta name="author" content="Mihkel Oviir">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="vendor/reveal.js-3.2.0/css/reveal.css">
+		<link rel="stylesheet" href="vendor/reveal.js-3.2.0/css/theme/league.css" id="theme">
+
+		<style>
+			.li-label {
+				display:inline-block;
+				width:250px
+			}
+			.gray-out.gray {
+				color:#999!important
+			}
+			img.naked-img {
+				background:none!important;
+				border:none!important;
+				box-shadow:none!important
+			}
+			.green {
+				color:#7CFC00!important
+			}
+			.red {
+				color:red!important
+			}
+			.reveal h1 {
+				font-size: 5em;
+				text-shadow: none;
+				letter-spacing: 10px
+			}
+
+		</style>
+
+		<!--[if lt IE 9]>
+		<script src="vendor/reveal.js-3.2.0/lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="">
+					<h1 class="green">Tere!</h1>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>
+						Mihkel Oviir | <b><span class="red">CGI</span> Eesti AS</b>
+					</p>
+				</section>
+
+				<section data-background="">
+					<h2>PRIA avalikud kaarditeenused</h2>
+					<p>ehk kasutusvõimalused</p>
+				</section>
+
+				<section data-background="">
+					<h2><span class="red">CGI</span> Eesti AS</h2>
+				</section>
+
+				<section data-background="">
+					<h2>PRIA</h2>
+				</section>
+
+				<section data-background="">
+					<h2>INSPIRE</h2>
+				</section>
+
+				<section data-background="">
+					<h2>Ruumiandmeteenused</h2>
+				</section>
+
+				<section data-background="">
+					<h2>Avalik veebikaart</h2>
+				</section>
+
+				<section data-background="">
+					<h2>Aafrika sigade katk</h2>
+				</section>
+
+				<section data-background="">
+					<h2>Taimekaitsevahendid ja mesilased</h2>
+				</section>
+
+				<section>
+					<h2>Aitäh!</h2>
+					<p>mihkel.oviir@cgi.com</p>
+					<p>&nbsp;</p>
+					<hr>
+					<p>&nbsp;</p>
+					
+					<div style="height:100px">
+
+					</div>
+				</section>
+
+
+			</div>
+
+		</div>
+		
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="vendor/reveal.js-3.2.0/lib/js/head.min.js"></script>
+		<script src="vendor/reveal.js-3.2.0/js/reveal.js"></script>
+
+		<script>
+
+			$(function(){
+				var rev_path = 'vendor/reveal.js-3.2.0/';
+
+				// Full list of configuration options available here:
+				// https://github.com/hakimel/reveal.js#configuration
+				Reveal.initialize({
+					controls: false,
+					progress: true,
+					history: true,
+					center: true,
+					theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+					transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+					// Optional libraries used to extend on reveal.js
+					dependencies: [
+						{ src: rev_path + 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+						{ src: rev_path + 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+						{ src: rev_path + 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+						{ src: rev_path + 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+						{ src: rev_path + 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+						{ src: rev_path + 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					]
+				});
+
+				Reveal.addEventListener( 'customevent', function(e) {
+					//console.log(e);
+				} );
+
+				Reveal.addEventListener( 'fragmentshown', function( event ) {
+					// event.fragment = the fragment DOM element
+					var el = $(event.fragment).prev();
+					if($(el).hasClass('gray-out')){
+						$(el).addClass('gray');
+					}
+				} );
+				Reveal.addEventListener( 'fragmenthidden', function( event ) {
+					// event.fragment = the fragment DOM element
+					var el = $(event.fragment).prev();
+					if($(el).hasClass('gray-out')){
+						$(el).removeClass('gray');
+					}
+				} );
+			});
+
+		</script>
+
+	</body>
+</html>
