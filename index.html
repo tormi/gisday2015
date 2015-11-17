@@ -30,10 +30,25 @@
 			.red {
 				color:red!important
 			}
+			.small {
+				font-size: .85em;
+			}
 			.reveal h1 {
 				font-size: 5em;
 				text-shadow: none;
 				letter-spacing: 10px
+			}
+			.reveal section img {
+				background: none;
+				border: none;
+				box-shadow: none
+			}
+			.reveal section.img-table img {
+				width:24%;
+				margin: 0
+			}
+			.reveal section.table table {
+				font-size: .8em
 			}
 
 		</style>
@@ -50,69 +65,214 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				
-				<section data-background="">
-					<h2>PRIA uued kaarditeenused</h2>
-					<p>avalikkuse teenistuses aktuaalsete väljakutsete näitel</p>
+				<section data-background="img/bg3.png" data-markdown>
+					<script type="text/template">
+						## PRIA uued kaarditeenused
+						**avalikkuse teenistuses aktuaalsete väljakutsete näitel**<!-- .element: class="green" -->
+					</script>
 				</section>
 				
-				<section data-background="">
-					<h1 class="green">Tere!</h1>
-					<p>&nbsp;</p>
-					<p>&nbsp;</p>
-					<p>
-						Mihkel Oviir | <b><span class="red">CGI</span> Eesti AS</b>
-					</p>
-				</section>
-
-				<section data-background="">
-					<h1 class="red">CGI</h1>
-				</section>
-
-				<section data-background="">
-					<h2>PRIA</h2>
-					
-				</section>
-
-				<section data-markdown>
+				<section data-background="img/bg4.png" data-markdown>
 					<script type="text/template">
-						## INSPIRE projekt
-						* Ruumiandmeteenused
-							* Põllumajandus- ja vesiviljelusettevõtted: INSPIRE vaatamis- ja allalaadimisteenused
-							* Põllumassiivide WMS/WFS
-							* Loomakasvatushoonete WMS/WFS
-						* Avalik veebikaart
+						## T e r e !<!-- .element: class="green" -->
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						Mihkel Oviir | **CGI**<!-- .element: class="red" --> Eesti AS
 					</script>
 				</section>
 
-				<section data-background="">
-					<h2>Ruumiandmeteenused</h2>
-				</section>
-
-				<section data-background="">
-					<h2>Avalik veebikaart</h2>
-				</section>
-
-				<section data-background="">
-					<h2>Aafrika sigade katk</h2>
-				</section>
-
-				<section data-markdown>
+				<section data-background="img/bg_cgi.png" data-markdown>
 					<script type="text/template">
-						## Taimekaitsevahendid ja mesilased
+						<div style="height:500px"></div>
+						![](img/CGI_logo.png)
+					</script>
+				</section>
+				
+				<section data-background="img/bg_cgi_eesti.png">
+					
+				</section>
+				
+				<section data-background="img/bg3.png" data-markdown>
+					<script type="text/template">
+						
+						![](img/pria_logo.png)
+						
+						Loomade register
+						
+						Põllumassiivide register
+						
+						Toetuste register
+						
+					</script>
+				</section>
+				
+				<section data-markdown data-background="img/bg3.png">
+					<script type="text/template">
+						## PRIA INSPIRE projekt
+						* **Eesmärk:**<!-- .element: class="green" --> PRIA haldusalas olevate andmekogude avalikult kättesaadavuse parandamine
+						* **Algus:**<!-- .element: class="green" --> 2013-09
+						* **Tulemus:**<!-- .element: class="green" --> 2014-08
+					
+					</script>
+				</section>
+				
+				<section data-markdown data-background="img/bg3.png">
+					<script type="text/template">
+						## PRIA INSPIRE projekt
+						
+						**INSPIRE teenused** <!-- .element: class="green" -->
+						
+						* Põllumajandus- ja vesiviljelusettevõtted
+						* Vaatamisteenus (WMS)  
+						http://inspire.pria.ee/services/services/wms?service=WMS&request=getCapabilities <!-- .element: target="_blank" -->
+						* Allalaadimisteenus (WFS 2.0)  
+						http://inspire.pria.ee/services/services/wfs?service=WFS&request=getCapabilities <!-- .element: target="_blank" -->
+						
+					</script>
+				</section>
+				
+				<section data-markdown data-background="img/bg3.png">
+					<script type="text/template">
+						## PRIA INSPIRE projekt
+						
+						**Ruumiandmeteenused** <!-- .element: class="green" -->
+						
+						* Põllumassiivid
+						* Loomakasvatushooned
+						* WMS  
+						http://kls.pria.ee/geoserver/pria_avalik/wms?service=WMS&request=getCapabilities <!-- .element: target="_blank" -->
+						* WFS  
+						http://kls.pria.ee/geoserver/pria_avalik/wfs?service=WFS&request=getCapabilities <!-- .element: target="_blank" -->
+						
+					</script>
+				</section>
+
+				<section data-markdown data-background="img/bg3.png">
+					<script type="text/template">
+						## PRIA INSPIRE projekt
+						
+						**Avalik veebikaart** <!-- .element: class="green" -->  
+						https://kls.pria.ee/kaart<!-- .element: target="_blank" -->
+						
+						* **Ülesanne:**<!-- .element: class="green" --> Olemasoleva rakenduse täiendamine detailsemate otsingutega
+						* **Tulemus:**<!-- .element: class="green" --> Täiesti uus kaardirakendus
+						
+					</script>
+				</section>
+				
+				<section data-markdown class="img-table" data-background="img/bg3.png">
+					<script type="text/template">
+						## PRIA INSPIRE projekt
+						
+						**Tehnoloogiad** <!-- .element: class="green" -->
+						
+						![](img/html.png)
+						![](img/jquery.png)
+						![](img/bootstrap.png)
+						![](img/openlayers.png)  
+						![](img/deegree.png)
+						![](img/geoserver.png)
+						![](img/php.png)  
+						![](img/postgis-logo.png)
+						![](img/postgresql.png)
+					</script>
+				</section>
+				
+				<section data-markdown class="table" data-background="img/bg3.png">
+					<script type="text/template">
+						## PRIA INSPIRE projekt
+						
+						**Kasutusstatistikat** <!-- .element: class="green" -->
+						
+						|             | 2015-08 | 2015-09 | 2015-10 | 2015-11 |
+						| ----------- | ------: | ------: | ------: | ------: |
+						| INSPIRE WMS | 140     | 1864    | 841     | 41      |
+						| INSPIRE WFS | 1088    | 1069    | 626     | 5395    |
+						| WMS         | 3294    | 1217    | 3962    | 2319    |
+						| WFS         | 128     | 1295    | 1842    | 457     |
+						| AVK         | 1187971 | 2769263 | 3517363 | 3905525 |
+
+
+
+						
+					</script>
+				</section>
+				
+				<section data-markdown data-background="img/bg3.png">
+					<script type="text/template">
+						
+						## kasutajad <!-- .element: class="green" -->
+						
+						* Veterinaar- ja toiduamet
+						* Põllumajandustootjad
+						* Omavalitsused
+						* Planeerijad
+						* Tudengid
+						* Uudishimulikud naabrid
+						
+					</script>
+					<aside>
+						x: 58.7013 y: 25.2933
+					</aside>
+				</section>
+
+				<section data-markdown data-background="img/bg3.png">
+					<script type="text/template">
+						
+						**Veterinaar- ja toiduamet** <!-- .element: class="green" -->
+						
+						kasutab PRIA veebikaarti oma igapäevases töös  
+						võitluses
+						
+						**Sigade Aafrika katkuga** <!-- .element: class="red" -->
+						
+						[:demo](https://kls.pria.ee/kaart/#map=11/6507562/574967)<!-- .element: target="_blank" -->  
+						<a href="https://kls.pria.ee/kaart/#otsi=ehitised/EE1220 (EE1220)" target="_blank">:demo</a>
+						
+					</script>
+					<aside>
+						x: 58.7013 y: 25.2933
+					</aside>
+				</section>
+
+				<section data-markdown data-background="img/bg3.png">
+					<script type="text/template">
+						**Põllumajandustootjad** <!-- .element: class="green" -->
+						
+						kasutavad PRIA kaarti, et leida naabruses paiknevaid mesinikke
+						
 						[:demo](https://kls.pria.ee/kaart/#map=8/6566045/616660)<!-- .element: target="_blank" -->
 					</script>
 				</section>
+				
+				<section data-markdown data-background="img/bg3.png">
+					<script type="text/template">
+						**Linnaisad** <!-- .element: class="green" -->
+						
+						otsivad PRIA kaardilt loomapidajaid
+						
+						[:demo](https://kls.pria.ee/kaart/#otsi=ehitised/EE30357)<!-- .element: target="_blank" -->
+					</script>
+				</section>
 
-				<section>
+				<section data-background="img/bg3.png">
 					<h2>Aitäh!</h2>
 					<p>mihkel.oviir@cgi.com</p>
 					<p>&nbsp;</p>
 					<hr>
 					<p>&nbsp;</p>
 					
-					<div style="height:100px">
-
-					</div>
+					<div style="height:100px"></div>
+				</section>
+				
+				<section data-markdown data-background="img/bg3.png">
+					<script type="text/template">
+						
+						### A i t ä h !<!-- .element: class="green" -->
+						
+						mihkel.oviir@cgi.com
+						
+					</script>
 				</section>
 
 
